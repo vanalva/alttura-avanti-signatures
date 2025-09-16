@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firmas de Email - Alttura & Avanti</title>
+    <style>
+        @font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:300; src:url('https://res.cloudinary.com/dn53emznt/raw/upload/v1755166352/SpaceGrotesk-Light_wgu1kc.woff2') format('woff2'); }
+        @font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:400; src:url('https://res.cloudinary.com/dn53emznt/raw/upload/v1755166353/SpaceGrotesk-Regular_lloavy.woff2') format('woff2'); }
+        @font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:500; src:url('https://res.cloudinary.com/dn53emznt/raw/upload/v1755166352/SpaceGrotesk-Medium_hitdjb.woff2') format('woff2'); }
+        @font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:700; src:url('https://res.cloudinary.com/dn53emznt/raw/upload/v1755166352/SpaceGrotesk-Bold_qamsy5.woff2') format('woff2'); }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Granular responsive body padding to prevent cropping */
+        @media (min-width: 1400px) {
+            body {
+                padding: 25px;
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 1399px) {
+            body {
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 999px) {
+            body {
+                padding: 15px;
+            }
+        }
+
+        @media (min-width: 720px) and (max-width: 799px) {
+            body {
+                padding: 11px;
+            }
+        }
+
+        @media (min-width: 650px) and (max-width: 719px) {
+            body {
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 580px) and (max-width: 649px) {
+            body {
+                padding: 9px;
+            }
+        }
+
+        @media (min-width: 520px) and (max-width: 579px) {
+            body {
+                padding: 8px;
+            }
+        }
+
+        @media (min-width: 460px) and (max-width: 519px) {
+            body {
+                padding: 7px;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 459px) {
+            body {
+                padding: 6px;
+            }
+        }
+
+        @media (min-width: 350px) and (max-width: 399px) {
+            body {
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 349px) {
+            body {
+                padding: 4px;
+            }
+        }
+
+        .container {
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #000;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background: white;
+            color: #333;
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 1px solid #000;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 300;
+        }
+
+        /* Responsive header styles */
+        @media (max-width: 767px) {
+            .header {
+                padding: 25px 20px;
+            }
+            .header h1 {
+                font-size: 2rem;
+                margin-bottom: 8px;
+            }
+            .header p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px 15px;
+            }
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            .header p {
+                font-size: 0.95rem;
+            }
+        }
+
+        .instructions-toggle {
+            background: white;
+            border-bottom: 1px solid #000;
+            padding: 0;
+        }
+
+        .instructions-button {
+            width: 100%;
+            background: white;
+            border: none;
+            padding: 25px 30px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #333;
+            cursor: pointer;
+            text-align: left;
+            font-family: 'Space Grotesk', Roboto, Arial, sans-serif;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .instructions-button:hover {
+            background: #f9f9f9;
+        }
+
+        .instructions-button .arrow {
+            font-size: 1rem;
+            transition: transform 0.2s ease;
+        }
+
+        .instructions-button.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .instructions-content {
+            display: none;
+            padding: 0 30px 30px 30px;
+            background: white;
+        }
+
+        .instructions-content.show {
+            display: block;
+        }
+
+        .instructions-content h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        .instructions-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .instructions-content ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .instructions-content li {
+            margin-bottom: 8px;
+            color: #666;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        .instructions-content .platform-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        /* Responsive instructions */
+        @media (max-width: 767px) {
+            .instructions-button {
+                padding: 20px 15px;
+                font-size: 1.1rem;
+            }
+            .instructions-content {
+                padding: 0 15px 20px 15px;
+            }
+            .instructions-content h3 {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+            }
+            .instructions-content ol {
+                margin-left: 15px;
+            }
+            .instructions-content li {
+                font-size: 0.95rem;
+                margin-bottom: 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .instructions-button {
+                padding: 15px;
+                font-size: 1rem;
+            }
+            .instructions-content {
+                padding: 0 15px 15px 15px;
+            }
+            .instructions-content h3 {
+                font-size: 1rem;
+            }
+            .instructions-content ol {
+                margin-left: 12px;
+            }
+            .instructions-content li {
+                font-size: 0.9rem;
+            }
+        }
+
+        .companies {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        /* Extra large screens - 2 columns full padding */
+        @media (min-width: 1400px) {
+            .companies {
+                grid-template-columns: 1fr 1fr;
+            }
+            .company-section {
+                padding: 30px 25px;
+            }
+            .company-section:first-child {
+                border-right: 1px solid #000;
+                border-bottom: none;
+            }
+        }
+
+        /* Large screens - 2 columns standard padding */
+        @media (min-width: 1024px) and (max-width: 1399px) {
+            .companies {
+                grid-template-columns: 1fr 1fr;
+            }
+            .company-section {
+                padding: 25px 20px;
+            }
+            .company-section:first-child {
+                border-right: 1px solid #000;
+                border-bottom: none;
+            }
+        }
+
+        /* Medium-large screens - 2 columns reduced padding */
+        @media (min-width: 900px) and (max-width: 1023px) {
+            .companies {
+                grid-template-columns: 1fr 1fr;
+            }
+            .company-section {
+                padding: 20px 15px;
+            }
+            .company-section:first-child {
+                border-right: 1px solid #000;
+                border-bottom: none;
+            }
+        }
+
+        /* Medium screens - 2 columns minimal padding */
+        @media (min-width: 768px) and (max-width: 899px) {
+            .companies {
+                grid-template-columns: 1fr 1fr;
+            }
+            .company-section {
+                padding: 18px 12px;
+            }
+            .company-section:first-child {
+                border-right: 1px solid #000;
+                border-bottom: none;
+            }
+        }
+
+        /* Transition to single column at 720px */
+        @media (max-width: 720px) {
+            .companies {
+                grid-template-columns: 1fr;
+            }
+            .company-section {
+                padding: 18px 12px;
+            }
+            .company-section:first-child {
+                border-right: none;
+                border-bottom: 1px solid #000;
+            }
+        }
+
+        /* Small screens and tablets - single column refined */
+        @media (max-width: 650px) {
+            .company-section {
+                padding: 15px 10px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .company-section {
+                padding: 12px 8px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .company-section {
+                padding: 10px 6px;
+            }
+        }
+
+        .company-section {
+            padding: 30px 20px;
+            background: white;
+        }
+
+        .company-section:first-child {
+            border-right: 1px solid #000;
+        }
+
+        .company-title {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 15px 0;
+            border: 1px solid transparent;
+            border-radius: 6px;
+        }
+
+        /* Responsive company titles */
+        @media (max-width: 767px) {
+            .company-title {
+                font-size: 1.75rem;
+                margin-bottom: 20px;
+                padding: 12px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .company-title {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                padding: 10px 0;
+            }
+        }
+
+        .alttura .company-title {
+            color: #000;
+            border-color: #000;
+        }
+
+        .avanti .company-title {
+            color: #000;
+            border-color: #000;
+        }
+
+        .signature-card {
+            background: white;
+            border: 1px solid #000;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: border-color 0.2s ease;
+        }
+
+        .signature-card:hover {
+            border-color: #000;
+        }
+
+        .alttura .signature-card:hover {
+            border-color: #000;
+        }
+
+        .avanti .signature-card:hover {
+            border-color: #000;
+        }
+
+        .signature-preview {
+            padding: 15px;
+            background: white;
+            border-bottom: 1px solid #000;
+            overflow: visible;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120px;
+            box-sizing: border-box;
+        }
+
+        /* Responsive signature previews with height adjustments */
+        @media (min-width: 1400px) {
+            .signature-preview {
+                min-height: 140px;
+                padding: 18px;
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 1399px) {
+            .signature-preview {
+                min-height: 130px;
+                padding: 16px;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 999px) {
+            .signature-preview {
+                min-height: 110px;
+                padding: 14px;
+            }
+        }
+
+        @media (min-width: 720px) and (max-width: 799px) {
+            .signature-preview {
+                min-height: 95px;
+                padding: 11px;
+            }
+        }
+
+        @media (min-width: 650px) and (max-width: 719px) {
+            .signature-preview {
+                min-height: 85px;
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 580px) and (max-width: 649px) {
+            .signature-preview {
+                min-height: 80px;
+                padding: 9px;
+            }
+        }
+
+        @media (min-width: 520px) and (max-width: 579px) {
+            .signature-preview {
+                min-height: 75px;
+                padding: 8px;
+            }
+        }
+
+        @media (min-width: 460px) and (max-width: 519px) {
+            .signature-preview {
+                min-height: 70px;
+                padding: 7px;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 459px) {
+            .signature-preview {
+                min-height: 65px;
+                padding: 6px;
+            }
+        }
+
+        @media (min-width: 350px) and (max-width: 399px) {
+            .signature-preview {
+                min-height: 60px;
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 349px) {
+            .signature-preview {
+                min-height: 55px;
+                padding: 4px;
+            }
+        }
+
+        .signature-preview table {
+            width: auto !important;
+            max-width: none !important;
+            border-collapse: collapse;
+            table-layout: auto !important;
+            font-family: 'Space Grotesk', Roboto, Arial, sans-serif;
+            margin: 0;
+            transform: scale(0.8);
+            transform-origin: center;
+        }
+
+        /* Responsive signature scaling - granular to prevent cropping */
+        @media (min-width: 1400px) {
+            .signature-preview table {
+                transform: scale(0.85);
+            }
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            .signature-preview table {
+                transform: scale(0.8);
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 1199px) {
+            .signature-preview table {
+                transform: scale(0.75);
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 999px) {
+            .signature-preview table {
+                transform: scale(0.7);
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 899px) {
+            .signature-preview table {
+                transform: scale(0.65);
+            }
+        }
+
+        @media (min-width: 720px) and (max-width: 799px) {
+            .signature-preview table {
+                transform: scale(0.58);
+            }
+        }
+
+        @media (min-width: 650px) and (max-width: 719px) {
+            .signature-preview table {
+                transform: scale(0.52);
+            }
+        }
+
+        @media (min-width: 580px) and (max-width: 649px) {
+            .signature-preview table {
+                transform: scale(0.48);
+            }
+        }
+
+        @media (min-width: 520px) and (max-width: 579px) {
+            .signature-preview table {
+                transform: scale(0.44);
+            }
+        }
+
+        @media (min-width: 460px) and (max-width: 519px) {
+            .signature-preview table {
+                transform: scale(0.42);
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 459px) {
+            .signature-preview table {
+                transform: scale(0.38);
+            }
+        }
+
+        @media (min-width: 350px) and (max-width: 399px) {
+            .signature-preview table {
+                transform: scale(0.35);
+            }
+        }
+
+        @media (max-width: 349px) {
+            .signature-preview table {
+                transform: scale(0.32);
+            }
+        }
+
+        /* Preview-specific styling to make them look good in cards */
+        .signature-preview table td[colspan="3"] {
+            text-align: center !important;
+            padding: 8px !important;
+        }
+
+        .signature-preview table img[alt*="Signature Graphic"] {
+            width: 600px !important;
+            height: auto !important;
+            display: block !important;
+            margin: 0 auto !important;
+        }
+
+        .signature-preview table tr:last-child td {
+            padding: 6px 3px !important;
+            font-size: 14px !important;
+            text-align: center !important;
+            width: 33.33% !important;
+        }
+
+        .signature-preview table td table {
+            margin: 0 auto !important;
+            border-collapse: collapse !important;
+        }
+
+        .signature-preview table td table td {
+            padding: 2px 4px !important;
+            font-size: 15px !important;
+            vertical-align: middle !important;
+        }
+
+        .signature-preview table span {
+            font-size: 16px !important;
+            color: #000000 !important;
+            display: block !important;
+            width: 20px !important;
+            height: 20px !important;
+            text-align: center !important;
+            line-height: 20px !important;
+        }
+
+        .signature-preview table a {
+            font-size: 15px !important;
+            line-height: 20px !important;
+            text-decoration: none !important;
+            color: #000000 !important;
+            white-space: nowrap !important;
+        }
+
+        .signature-info {
+            padding: 15px;
+            text-align: center;
+            background: white;
+        }
+
+        .person-name {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .person-title {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        /* Responsive person info */
+        @media (max-width: 767px) {
+            .signature-info {
+                padding: 12px;
+            }
+            .person-name {
+                font-size: 1.1rem;
+                margin-bottom: 4px;
+            }
+            .person-title {
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .signature-info {
+                padding: 10px;
+            }
+            .person-name {
+                font-size: 1rem;
+                margin-bottom: 3px;
+            }
+            .person-title {
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        .copy-btn {
+            background: white;
+            color: #666;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+            font-family: 'Space Grotesk', Roboto, Arial, sans-serif;
+        }
+
+        /* Responsive copy button */
+        @media (max-width: 767px) {
+            .copy-btn {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .copy-btn {
+                padding: 8px 16px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .copy-btn:hover {
+            border-color: #000;
+            color: #000;
+        }
+
+        .alttura .copy-btn:hover {
+            border-color: #000;
+            color: #000;
+        }
+
+        .avanti .copy-btn:hover {
+            border-color: #000;
+            color: #000;
+        }
+
+        .copy-btn:active {
+            background: #f5f5f5;
+        }
+
+        .copy-btn.copied {
+            background: #000;
+            color: white;
+            border-color: #000;
+        }
+
+        .footer {
+            background: white;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            font-weight: 300;
+            border-top: 1px solid #000;
+        }
+
+        /* Responsive footer */
+        @media (max-width: 767px) {
+            .footer {
+                padding: 15px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer {
+                padding: 12px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: white;
+            padding: 15px 20px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            font-weight: 300;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Firmas de Email</h1>
+            <p>Selecciona y copia tu firma para usar en Outlook</p>
+        </div>
+
+        <div class="instructions-toggle">
+            <button class="instructions-button" onclick="toggleInstructions()">
+                Instrucciones
+                <span class="arrow">▼</span>
+            </button>
+            <div class="instructions-content" id="instructionsContent">
+                <h3>🖥️ Outlook 365 para Windows</h3>
+                <div class="platform-section">
+                    <ol>
+                        <li><strong>Selecciona tu firma:</strong> Busca tu nombre en la lista correspondiente a tu empresa</li>
+                        <li><strong>Copia la firma:</strong> Haz clic en el botón "Copiar Firma" de tu tarjeta</li>
+                        <li><strong>Abre Outlook:</strong> Ve a <strong>Archivo</strong> → <strong>Opciones</strong> → <strong>Correo</strong></li>
+                        <li><strong>Accede a firmas:</strong> Haz clic en <strong>"Firmas..."</strong> en la sección "Redactar mensajes"</li>
+                        <li><strong>Crea nueva firma:</strong> Haz clic en <strong>"Nuevo"</strong> y dale un nombre a tu firma</li>
+                        <li><strong>Pega tu firma:</strong> En el editor de firmas, pega tu firma con <strong>Ctrl+V</strong></li>
+                        <li><strong>Configura para usar:</strong> Selecciona tu firma en "Nuevos mensajes" y "Respuestas/reenvíos"</li>
+                        <li><strong>Guarda:</strong> Haz clic en <strong>"Aceptar"</strong> para aplicar los cambios</li>
+                    </ol>
+                </div>
+
+                <h3>🍎 Outlook 365 para Mac</h3>
+                <div class="platform-section">
+                    <ol>
+                        <li><strong>Selecciona tu firma:</strong> Busca tu nombre en la lista correspondiente a tu empresa</li>
+                        <li><strong>Copia la firma:</strong> Haz clic en el botón "Copiar Firma" de tu tarjeta</li>
+                        <li><strong>Abre Outlook:</strong> Ve a <strong>Outlook</strong> → <strong>Preferencias</strong> en la barra de menú</li>
+                        <li><strong>Accede a firmas:</strong> Haz clic en <strong>"Firmas"</strong> en la sección "Correo electrónico"</li>
+                        <li><strong>Crea nueva firma:</strong> Haz clic en el botón <strong>"+"</strong> para agregar una nueva firma</li>
+                        <li><strong>Pega tu firma:</strong> En el editor de firmas, pega tu firma con <strong>Cmd+V</strong></li>
+                        <li><strong>Configura para usar:</strong> Selecciona tu firma en los menús "Firma predeterminada" y "Responder/Reenviar con"</li>
+                        <li><strong>Guarda:</strong> Cierra la ventana de preferencias para guardar los cambios</li>
+                    </ol>
+                </div>
+
+                <h3>🌐 Outlook Web (outlook.office.com)</h3>
+                <div class="platform-section">
+                    <ol>
+                        <li><strong>Selecciona tu firma:</strong> Busca tu nombre en la lista correspondiente a tu empresa</li>
+                        <li><strong>Copia la firma:</strong> Haz clic en el botón "Copiar Firma" de tu tarjeta</li>
+                        <li><strong>Abre configuración:</strong> Haz clic en el ícono de engranaje ⚙️ en la esquina superior derecha</li>
+                        <li><strong>Ve a configuración completa:</strong> En el panel, haz clic en <strong>"Ver toda la configuración de Outlook"</strong></li>
+                        <li><strong>Accede a redacción:</strong> Ve a <strong>"Redactar y responder"</strong> en el menú izquierdo</li>
+                        <li><strong>Pega tu firma:</strong> En la sección "Firma de correo electrónico", pega tu firma con <strong>Ctrl+V</strong> (Windows) o <strong>Cmd+V</strong> (Mac)</li>
+                        <li><strong>Configura automáticamente:</strong> Marca las casillas para incluir tu firma automáticamente en nuevos mensajes y respuestas</li>
+                        <li><strong>Guarda:</strong> Haz clic en <strong>"Guardar"</strong> para aplicar tu nueva firma</li>
+                    </ol>
+                </div>
+
+                <h3>💡 Consejos adicionales</h3>
+                <div class="platform-section">
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Prueba tu firma:</strong> Envía un correo de prueba a ti mismo para verificar que se vea correctamente</li>
+                        <li><strong>Múltiples firmas:</strong> Puedes crear diferentes firmas para diferentes propósitos (formal, casual, etc.)</li>
+                        <li><strong>Móviles:</strong> Las firmas se sincronizarán automáticamente en tus dispositivos móviles una vez configuradas</li>
+                        <li><strong>Problemas de formato:</strong> Si la firma no se ve bien, asegúrate de pegarla en modo "Texto enriquecido" o "HTML"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="companies">
+            <div class="company-section alttura">
+                <h2 class="company-title">Alttura</h2>
+
+                <!-- Alfonso Alttura -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.alttura.group" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-alttura-alfonso_weoam1.png" alt="Alfonso Ermoli - Executive Director" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3142</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Alfonso Ermoli</div>
+                        <div class="person-title">Executive Director</div>
+                        <button class="copy-btn" onclick="copySignature('alfonso-alttura')">Copiar Firma</button>
+                    </div>
+                </div>
+
+                <!-- Diego Alttura -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.alttura.group" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-diego_zgrhcc.png" alt="Diego Ermoli - Business Development Director" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-0667</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Diego Ermoli</div>
+                        <div class="person-title">Business Development Director</div>
+                        <button class="copy-btn" onclick="copySignature('diego-alttura')">Copiar Firma</button>
+                    </div>
+                </div>
+
+                <!-- Dunia Alttura -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.alttura.group" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-dunia_hqmkfj.png" alt="Dunia Manzano - Finance & Admin Director" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3304</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Dunia Manzano</div>
+                        <div class="person-title">Finance & Admin Director</div>
+                        <button class="copy-btn" onclick="copySignature('dunia-alttura')">Copiar Firma</button>
+                    </div>
+                </div>
+
+                <!-- Vanessa Alttura -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.alttura.group" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-vanessa_dezkiy.png" alt="Vanessa Greco - Sales & Communications Director" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-1142</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Vanessa Greco</div>
+                        <div class="person-title">Sales & Communications Director</div>
+                        <button class="copy-btn" onclick="copySignature('vanessa-alttura')">Copiar Firma</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company-section avanti">
+                <h2 class="company-title">Avanti</h2>
+
+                <!-- Alfonso Avanti -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.avanti.build" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-alfonso_ekuohk.png" alt="Alfonso Ermoli - Managing Director" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3142</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Alfonso Ermoli</div>
+                        <div class="person-title">Managing Director</div>
+                        <button class="copy-btn" onclick="copySignature('alfonso-avanti')">Copiar Firma</button>
+                    </div>
+                </div>
+
+                <!-- Diego Avanti -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.avanti.build" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-diego_ys5vzy.png" alt="Diego Ermoli - Business Development Director" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-0667</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Diego Ermoli</div>
+                        <div class="person-title">Business Development Director</div>
+                        <button class="copy-btn" onclick="copySignature('diego-avanti')">Copiar Firma</button>
+                    </div>
+                </div>
+
+                <!-- Dunia Avanti -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.avanti.build" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-dunia_i2mknv.png" alt="Dunia Manzano - Finance & Admin Manager" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3304</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Dunia Manzano</div>
+                        <div class="person-title">Finance & Admin Manager</div>
+                        <button class="copy-btn" onclick="copySignature('dunia-avanti')">Copiar Firma</button>
+                    </div>
+                </div>
+
+                <!-- Vanessa Avanti -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.avanti.build" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-vansessa_y7jxwq.png" alt="Vanessa Greco - Procurement & Sales Manager" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-1142</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Vanessa Greco</div>
+                        <div class="person-title">Procurement & Sales Manager</div>
+                        <button class="copy-btn" onclick="copySignature('vanessa-avanti')">Copiar Firma</button>
+                    </div>
+                </div>
+
+                <!-- Julio Avanti -->
+                <div class="signature-card">
+                    <div class="signature-preview">
+                        <table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+                            <tr>
+                                <td colspan="3" style="text-align: center; padding: 10px;">
+                                    <a href="https://www.avanti.build" style="text-decoration: none;">
+                                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-julio_fg04q4.png" alt="Julio Urrunaga - Senior Project Manager-MCE" style="width: 600px; height: auto; display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">📞</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+12817639536" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(281) 763-9536</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🏢</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                                        <tr>
+                                            <td valign="middle" style="padding-right: 6px; width: 20px;">
+                                                <span style="font-size: 16px; color: #000000; display: block; width: 20px; height: 20px; text-align: center; line-height: 20px;">🌐</span>
+                                            </td>
+                                            <td valign="middle" style="text-align: left;">
+                                                <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="signature-info">
+                        <div class="person-name">Julio Urrunaga</div>
+                        <div class="person-title">Senior Project Manager-MCE</div>
+                        <button class="copy-btn" onclick="copySignature('julio-avanti')">Copiar Firma</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Alttura & Avanti - Firmas de Email Profesionales</p>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        ✅ Firma copiada al portapapeles
+    </div>
+
+    <script>
+        // Store signature HTML for each person
+        const signatures = {
+            'alfonso-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.alttura.group" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-alttura-alfonso_weoam1.png" alt="Alfonso Ermoli - Executive Director" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3142</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'diego-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.alttura.group" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-diego_zgrhcc.png" alt="Diego Ermoli - Business Development Director" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-0667</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'dunia-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.alttura.group" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-dunia_hqmkfj.png" alt="Dunia Manzano - Finance & Admin Director" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3304</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'vanessa-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.alttura.group" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-vanessa_dezkiy.png" alt="Vanessa Greco - Sales & Communications Director" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-1142</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'alfonso-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.avanti.build" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-alfonso_ekuohk.png" alt="Alfonso Ermoli - Managing Director" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3142</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'diego-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.avanti.build" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-diego_ys5vzy.png" alt="Diego Ermoli - Business Development Director" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-0667</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'dunia-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.avanti.build" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-dunia_i2mknv.png" alt="Dunia Manzano - Finance & Admin Manager" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3304</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'vanessa-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.avanti.build" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-vansessa_y7jxwq.png" alt="Vanessa Greco - Procurement & Sales Manager" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-1142</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`,
+
+            'julio-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+    <tr>
+        <td colspan="3" style="text-align: center; padding: 10px;">
+            <a href="https://www.avanti.build" style="text-decoration: none;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-julio_fg04q4.png" alt="Julio Urrunaga - Senior Project Manager-MCE" style="width: 600px; height: auto; display: block;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+12817639536" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(281) 763-9536</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
+                <tr>
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
+                    </td>
+                    <td valign="middle" style="text-align: left;">
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>`
+        };
+
+        function copySignature(personId) {
+            const signatureHtml = signatures[personId];
+            const button = event.target;
+
+            if (signatureHtml) {
+                try {
+                    // Create a temporary container with clean styling
+                    const tempDiv = document.createElement('div');
+                    tempDiv.style.position = 'absolute';
+                    tempDiv.style.left = '-9999px';
+                    tempDiv.style.top = '-9999px';
+                    tempDiv.style.background = 'transparent';
+                    tempDiv.style.backgroundColor = 'transparent';
+                    tempDiv.style.border = 'none';
+                    tempDiv.style.padding = '0';
+                    tempDiv.style.margin = '0';
+                    tempDiv.innerHTML = signatureHtml;
+
+                    // Ensure the signature table has no background
+                    const table = tempDiv.querySelector('table');
+                    if (table) {
+                        table.style.background = 'transparent';
+                        table.style.backgroundColor = 'transparent';
+                        // Remove backgrounds from all cells
+                        const cells = table.querySelectorAll('td');
+                        cells.forEach(cell => {
+                            cell.style.background = 'transparent';
+                            cell.style.backgroundColor = 'transparent';
+                        });
+                    }
+
+                    // Add to DOM
+                    document.body.appendChild(tempDiv);
+
+                    // Create selection and copy
+                    const range = document.createRange();
+                    range.selectNodeContents(tempDiv);
+                    const selection = window.getSelection();
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+
+                    // Copy the selection
+                    const success = document.execCommand('copy');
+
+                    // Clean up
+                    selection.removeAllRanges();
+                    document.body.removeChild(tempDiv);
+
+                    if (success) {
+                        // Show success feedback
+                        showToast();
+
+                        // Update button temporarily
+                        const originalText = button.textContent;
+                        button.textContent = 'Copiado ✓';
+                        button.classList.add('copied');
+
+                        setTimeout(() => {
+                            button.textContent = originalText;
+                            button.classList.remove('copied');
+                        }, 2000);
+                    } else {
+                        throw new Error('Copy command failed');
+                    }
+                } catch (err) {
+                    console.error('Error copying to clipboard:', err);
+
+                    // Fallback: try modern clipboard API with HTML
+                    if (navigator.clipboard && navigator.clipboard.write) {
+                        const clipboardItem = new ClipboardItem({
+                            'text/html': new Blob([signatureHtml], { type: 'text/html' }),
+                            'text/plain': new Blob([signatureHtml], { type: 'text/plain' })
+                        });
+
+                        navigator.clipboard.write([clipboardItem]).then(() => {
+                            showToast();
+                            const originalText = button.textContent;
+                            button.textContent = 'Copiado ✓';
+                            button.classList.add('copied');
+                            setTimeout(() => {
+                                button.textContent = originalText;
+                                button.classList.remove('copied');
+                            }, 2000);
+                        }).catch(() => {
+                            alert('Error al copiar la firma. Por favor, intenta de nuevo o usa un navegador más reciente.');
+                        });
+                    } else {
+                        alert('Error al copiar la firma. Por favor, intenta de nuevo.');
+                    }
+                }
+            }
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        function toggleInstructions() {
+            const content = document.getElementById('instructionsContent');
+            const button = document.querySelector('.instructions-button');
+            const arrow = button.querySelector('.arrow');
+
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                button.classList.remove('active');
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                content.classList.add('show');
+                button.classList.add('active');
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+</body>
+</html>
