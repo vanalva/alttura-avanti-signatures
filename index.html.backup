@@ -1418,47 +1418,47 @@
     <script>
         // Store signature HTML for each person
         const signatures = {
-            'alfonso-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'alfonso-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.alttura.group" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-alttura-alfonso_weoam1.png" alt="Alfonso Ermoli - Executive Director" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-alttura-alfonso_weoam1.png" alt="Alfonso Ermoli - Executive Director" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 702-3142</a>
+                        <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3142</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9039</a>
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.alttura.group</a>
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
                     </td>
                 </tr>
             </table>
@@ -1466,47 +1466,47 @@
     </tr>
 </table>`,
 
-            'diego-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'diego-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.alttura.group" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-diego_zgrhcc.png" alt="Diego Ermoli - Business Development Director" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-diego_zgrhcc.png" alt="Diego Ermoli - Business Development Director" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 208-0667</a>
+                        <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-0667</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9039</a>
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.alttura.group</a>
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
                     </td>
                 </tr>
             </table>
@@ -1514,47 +1514,47 @@
     </tr>
 </table>`,
 
-            'dunia-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'dunia-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.alttura.group" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-dunia_hqmkfj.png" alt="Dunia Manzano - Finance & Admin Director" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-dunia_hqmkfj.png" alt="Dunia Manzano - Finance & Admin Director" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 702-3304</a>
+                        <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3304</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9039</a>
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.alttura.group</a>
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
                     </td>
                 </tr>
             </table>
@@ -1562,47 +1562,47 @@
     </tr>
 </table>`,
 
-            'vanessa-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'vanessa-alttura': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.alttura.group" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-vanessa_dezkiy.png" alt="Vanessa Greco - Sales & Communications Director" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052020/signature-graphic-alttura-vanessa_dezkiy.png" alt="Vanessa Greco - Sales & Communications Director" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 208-1142</a>
+                        <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-1142</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9039</a>
+                        <a href="tel:+13468339039" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9039</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.alttura.group</a>
+                        <a href="https://www.alttura.group" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.alttura.group</a>
                     </td>
                 </tr>
             </table>
@@ -1610,47 +1610,47 @@
     </tr>
 </table>`,
 
-            'alfonso-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'alfonso-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.avanti.build" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-alfonso_ekuohk.png" alt="Alfonso Ermoli - Managing Director" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-alfonso_ekuohk.png" alt="Alfonso Ermoli - Managing Director" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 702-3142</a>
+                        <a href="tel:+17137023142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3142</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9035</a>
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.avanti.build</a>
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
                     </td>
                 </tr>
             </table>
@@ -1658,47 +1658,47 @@
     </tr>
 </table>`,
 
-            'diego-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'diego-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.avanti.build" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-diego_ys5vzy.png" alt="Diego Ermoli - Business Development Director" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-diego_ys5vzy.png" alt="Diego Ermoli - Business Development Director" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 208-0667</a>
+                        <a href="tel:+17132080667" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-0667</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9035</a>
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.avanti.build</a>
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
                     </td>
                 </tr>
             </table>
@@ -1706,47 +1706,47 @@
     </tr>
 </table>`,
 
-            'dunia-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'dunia-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.avanti.build" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-dunia_i2mknv.png" alt="Dunia Manzano - Finance & Admin Manager" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-dunia_i2mknv.png" alt="Dunia Manzano - Finance & Admin Manager" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 702-3304</a>
+                        <a href="tel:+17137023304" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 702-3304</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9035</a>
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.avanti.build</a>
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
                     </td>
                 </tr>
             </table>
@@ -1754,47 +1754,47 @@
     </tr>
 </table>`,
 
-            'vanessa-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'vanessa-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.avanti.build" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-vansessa_y7jxwq.png" alt="Vanessa Greco - Procurement & Sales Manager" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-vansessa_y7jxwq.png" alt="Vanessa Greco - Procurement & Sales Manager" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(713) 208-1142</a>
+                        <a href="tel:+17132081142" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(713) 208-1142</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9035</a>
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.avanti.build</a>
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
                     </td>
                 </tr>
             </table>
@@ -1802,47 +1802,47 @@
     </tr>
 </table>`,
 
-            'julio-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 390px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
+            'julio-avanti': `<table cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; table-layout: fixed; font-family:'Space Grotesk', Roboto, Arial, sans-serif;">
     <tr>
-        <td colspan="3" style="text-align: center; padding: 7px;">
+        <td colspan="3" style="text-align: center; padding: 10px;">
             <a href="https://www.avanti.build" style="text-decoration: none;">
-                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-julio_fg04q4.png" alt="Julio Urrunaga - Senior Project Manager-MCE" style="width: 390px; height: auto; display: block;">
+                <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758052019/signature-graphic-avanti-julio_fg04q4.png" alt="Julio Urrunaga - Senior Project Manager-MCE" style="width: 600px; height: auto; display: block;">
             </a>
         </td>
     </tr>
     <tr>
-        <td style="padding: 4px 4px 4px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 6px 6px 0; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/phone-icon_f3lfft.png" alt="Phone Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+12817639536" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(281) 763-9536</a>
+                        <a href="tel:+12817639536" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(281) 763-9536</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053482/office-icon_oq6mx3.png" alt="Office Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">(346) 833-9035</a>
+                        <a href="tel:+13468339035" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">(346) 833-9035</a>
                     </td>
                 </tr>
             </table>
         </td>
-        <td style="padding: 4px 0 4px 4px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 9px; color: #555; text-align: center; width: 33.33%;">
+        <td style="padding: 6px 0 6px 6px; font-family: 'Space Grotesk', Roboto, Arial, sans-serif; font-size: 14px; color: #555; text-align: center; width: 33.33%;">
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; margin: 0 auto;">
                 <tr>
-                    <td valign="middle" style="padding-right: 4px; width: 13px;">
-                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="13" height="13" style="display: block; border: 0; width: 13px; height: 13px;">
+                    <td valign="middle" style="padding-right: 6px; width: 20px;">
+                        <img src="https://res.cloudinary.com/dn53emznt/image/upload/v1758053483/web-icon_j0nnej.png" alt="Website Icon" width="20" height="20" style="display: block; border: 0; width: 20px; height: 20px;">
                     </td>
                     <td valign="middle" style="text-align: left;">
-                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 10px; line-height: 13px; white-space: nowrap;">www.avanti.build</a>
+                        <a href="https://www.avanti.build" style="text-decoration: none; color: #000000; font-family: inherit; font-size: 15px; line-height: 20px; white-space: nowrap;">www.avanti.build</a>
                     </td>
                 </tr>
             </table>

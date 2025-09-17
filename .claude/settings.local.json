@@ -4,7 +4,10 @@
       "Bash(mkdir:*)",
       "Bash(mv:*)",
       "Bash(rmdir:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(for file in \"G:/Juan Carlos/Trabajo/Van Alva/Email Lab/Signatures/signatures/alttura/\"*.html)",
+      "Bash(do cp \"$file\" \"$file.backup\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
